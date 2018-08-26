@@ -269,4 +269,10 @@ defaults:
       comments: # true
       share: false
       related: true
-      category: "posts"
+      header:
+        overlay_color: "#5e616c"
+        overlay_filter: "0.5"
+        overlay_image: /assets/images/drone.jpeg
+        caption: "[Unsplash](https://unsplash.com)"
+      categories:
+        - posts

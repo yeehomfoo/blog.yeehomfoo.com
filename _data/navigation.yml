@@ -1,6 +1,6 @@
 # main links
 main:
   - title: "About"
-    url: https://github.com/yeehomfoo
+    url: /about/
   - title: "Posts"
     url: /posts/
