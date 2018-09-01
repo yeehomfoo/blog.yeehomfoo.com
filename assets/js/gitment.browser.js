@@ -3481,7 +3481,7 @@ var Gitment = function () {
     value: function createIssue() {
       var _this5 = this;
 
-      var id = this.id,
+      var id = encodeURI(this.id),
           owner = this.owner,
           repo = this.repo,
           title = this.title,
@@ -3530,7 +3530,7 @@ var Gitment = function () {
     value: function loadMeta() {
       var _this7 = this;
 
-      var id = this.id,
+      var id = encodeURI(this.id),
           owner = this.owner,
           repo = this.repo;
 
