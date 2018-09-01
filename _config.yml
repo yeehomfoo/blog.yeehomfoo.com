@@ -103,7 +103,7 @@ author:
   name             : "Yeehom Foo"
   avatar           : "/assets/images/bio-photo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "A person deep in tech."
-  location         : "Somewhere on the earth"
+  location         : "Shenzhe, China"
   email            :
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"

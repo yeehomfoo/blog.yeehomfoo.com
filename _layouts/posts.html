@@ -19,7 +19,35 @@ layout: archive
   <a href="#page-title" class="back-to-top">Back to Top &uarr;</a>
 </section>
 
-<div id="lv-container" data-id="city" data-uid="MTAyMC8zOTI2NC8xNTc5MQ==">
+<div id="comments"></div>
+<script type="text/javascript">
+  var commentsEl = document.getElementById('comments');
+  if (commentsEl) {
+  var myTheme = {
+    render(state, instance) {
+      var container = document.createElement('div')
+      container.lang = "en-US"
+      container.className = 'gitment-container gitment-root-container'
+      container.appendChild(instance.renderHeader(state, instance))
+      container.appendChild(instance.renderEditor(state, instance))
+      container.appendChild(instance.renderComments(state, instance))
+      container.appendChild(instance.renderFooter(state, instance))
+      return container
+    },
+  }
+  var gitment = new Gitment({
+    owner: 'yeehomfoo',
+    repo: 'yeehomfoo.github.io',
+    oauth: {
+      client_id: '89599145ba5c82d276b9',
+      client_secret: '9b13810d603d7e9ffaa6c6b4a040b60a569baa17'
+    },
+    theme: myTheme,
+  });
+  gitment.render(commentsEl);
+  }
+</script>
+<!-- <div id="lv-container" data-id="city" data-uid="MTAyMC8zOTI2NC8xNTc5MQ==">
     <script type="text/javascript">
    (function(d, s) {
        var j, e = d.getElementsByTagName(s)[0];
@@ -33,4 +61,4 @@ layout: archive
        e.parentNode.insertBefore(j, e);
    })(document, 'script');
     </script>
-</div>
+</div> -->
