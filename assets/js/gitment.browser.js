@@ -3489,10 +3489,13 @@ var Gitment = function () {
           desc = this.desc,
           labels = this.labels;
 
+      if (id && id.length > 50) {
+        id = id.substr(0, 50);
+      }
 
       return _utils.http.post('/repos/' + owner + '/' + repo + '/issues', {
         title: title,
-        labels: labels.concat(['gitment']),
+        labels: labels.concat(['gitment', id]),
         body: link + '\n\n' + desc
       }).then(function (meta) {
         _this5.state.meta = meta;
@@ -3530,6 +3533,10 @@ var Gitment = function () {
       var id = this.id,
           owner = this.owner,
           repo = this.repo;
+
+      if (id && id.length > 50) {
+        id = id.substr(0, 50);
+      }
 
       return _utils.http.get('/repos/' + owner + '/' + repo + '/issues', {
         creator: owner,
