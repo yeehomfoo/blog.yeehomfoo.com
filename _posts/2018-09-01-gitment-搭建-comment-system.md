@@ -69,7 +69,7 @@ Gitment 初始化评论时，会发送 `https://api.github.com/repos/yeehomfoo/y
 ```json
 // 请求参数
 {
-  "title":"在 Mac中搭建 Node.js环境 - Wild of Knowledge",
+  "title":"在 Mac中搭建 Node.js环境 - Wilderness of Knowledge",
   "labels":["gitment",
             "https://yeehomfoo.github.io/posts/%25E5%259C%25A8--mac%E4%B8%AD%E6%90%AD%E5%BB%BA-node.js%E7%8E%AF%E5%A2%83/"
             ],
