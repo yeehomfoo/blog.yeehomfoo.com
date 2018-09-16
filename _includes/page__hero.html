@@ -54,6 +54,11 @@
       {% if page.header.cta_url %}
         <p><a href="{{ cta_path }}" class="btn btn--light-outline btn--large">{{ page.header.cta_label | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}</a></p>
       {% endif %}
+      {% if overlay_img_path %}
+      <div style ="margin:0 auto;width:0px;height:0px;overflow:hidden; ">
+        <img src="{{ overlay_img_path }}">
+      </div>
+      {% endif %}
     </div>
   {% else %}
     <img src="{{ img_path }}" alt="{{ image_description }}" class="page__hero-image">
